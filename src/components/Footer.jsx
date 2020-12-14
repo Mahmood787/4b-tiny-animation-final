@@ -36,7 +36,7 @@ const Footer = () => {
                 </span>
             </div>
             <div className="bottom-footer">
-                <p>All right reserved ©2019 zaparetechnologies.com</p>
+                <p>All rights reserved ©2019 zaparetechnologies.com</p>
                 <p>Cloned by : <a href="www.facebook.com">Mahmood Ahmed Khan</a></p>
             </div>
 
