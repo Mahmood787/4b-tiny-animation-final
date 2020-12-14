@@ -22,13 +22,13 @@ const goToPreviousSlide =()=>{
         }
     }
     // for delay
-    useEffect(()=>{
-        setInterval(()=>{
-            setNum(num++)
-        },3000)
-    })
+    
+        // setInterval(()=>{
+        //     setNum(num++)
+        // },3000)
+
     return (
-        <div className="main-jumbo">
+        <div className="main-jumbo" style={{paddingTop:"50px"}}>
             <div className="svg">
                 <svg id="bfd7ed38-e2c2-4ce4-aa7c-70bac4bc4918" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 807.85972 581.58175">
                     <path d="M901.32664,359.28559c-29.23789-21.85782-75.03171-42.52949-125.63917-56.71393-46.07822-12.91529-91.02143-19.15081-126.56032-17.55845l-.185-4.13293c35.96224-1.61055,81.37165,4.67732,127.862,17.70792,51.07935,14.31675,97.36929,35.23244,126.99984,57.384Z" transform="translate(-196.07014 -159.20912)" fill="#ccc"/>
@@ -62,6 +62,7 @@ const goToPreviousSlide =()=>{
                     <path d="M504.07014,740.79088h-307a1,1,0,0,1,0-2h307a1,1,0,1,1,0,2Z" transform="translate(-196.07014 -159.20912)" fill="#3f3d56"/></svg>
             </div>
 {/* Slider Text 1 */}
+            <div style={{paddingRight:"50px"}}>
 {data.map((x, ind)=>(
     
             <div  data-ride="slider" data-interval="3000"
@@ -74,18 +75,22 @@ const goToPreviousSlide =()=>{
                 </div>
                 <div className="slider-bottom">
                     <h4 className="my-element4 h4ss">{x.sub}</h4>
-                </div>    
+                </div> 
+                
+              
             </div>
             
             ))}
+            <div className="left-right" style={{padding:"40px 440px 0 0"}}>
             <div className='backArrow' >
-                 <i className='fa fa-angle-left fa-3x' onClick={goToPreviousSlide}aria-hidden='true'></i>
+                 <i style={{cursor:"pointer"}}className='fa fa-angle-left fa-3x' onClick={goToPreviousSlide}aria-hidden='true'></i>
             </div>
             <div className='forwardArrow' >
-                 <i className='fa fa-angle-right fa-3x'onClick={goToNextSlide} aria-hidden='true'></i>
+                 <i style={{cursor:"pointer"}}className='fa fa-angle-right fa-3x'onClick={goToNextSlide} aria-hidden='true'></i>
             </div>
+            </div> 
+           </div>
         </div>
     )
 }
-
 export default Jombo

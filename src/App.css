@@ -20,17 +20,12 @@ body{
   width: 100%;
   background: white;
   margin:auto;
-  
 }
-
 .scrolled{
   box-shadow: 0 2px 34px -27px rgba(0,58,120,.64);
   position: fixed;
   top: -70px;
   transition: all .3s ease-in-out;
-  transition-property: all;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-in-out;
   transform: translate(0,70px);
   z-index: 3;
 }
@@ -534,4 +529,10 @@ a{
 }
 .bottom-footer *:hover{
   color: white;
+}
+
+.left-right{
+  grid-column: 2/4;
+    justify-content: space-between;
+    display: flex;
 }

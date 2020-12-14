@@ -65,8 +65,6 @@ const [sta, setSta]=useState(false)
         box6.getAnimation().play();
         box7.getAnimation().play();
     }else{}
-
-
     return (
         <div className="services">
          <div className="service-left animate__animated ">
@@ -108,5 +106,4 @@ const [sta, setSta]=useState(false)
         </div>
     )
 }
-
 export default Service
